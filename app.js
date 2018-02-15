@@ -44,7 +44,3 @@ app.get('/project/:id', project.projectInfo);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-$.get("http://URL", callBackFn)
-
-$.post("http://URL", {"json":"json"}, callBackFn)
