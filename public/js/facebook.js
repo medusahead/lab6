@@ -15,10 +15,8 @@ function statusChangeCallback(response) {
     // Logged into your app and Facebook.
         console.log('Successfully logged in with Facebook');
 
-
-
 function changeUser(response) {
-  $("facebookLogin").click(function(){
+  $("#facebookLogin").click(function(){
     $("p").hide();
   $("h1 #name").text(response.name)
   $('#photo').attr('src', response.picture.data.url);
